@@ -84,7 +84,7 @@ PS1  :=GeosFpDriver.ps
 
 srcdoc:
 	rm -f $(TEX1)
-	protex -sf $(SRC1) > $(TEX1)
+	./protex -sf $(SRC1) > $(TEX1)
 	latex $(TEX1)
 	latex $(TEX1)
 	latex $(TEX1)
@@ -118,7 +118,7 @@ PS4  :=NcdfUtilities.ps
 
 ncdoc:
 	rm -f $(TEX4)
-	protex -sf $(SRC4) > $(TEX4)
+	./protex -sf $(SRC4) > $(TEX4)
 	latex $(TEX4)
 	latex $(TEX4)
 	latex $(TEX4)
@@ -146,7 +146,7 @@ PS2  = GeosFpDriver_Makefiles.ps
 
 makedoc:
 	rm -f $(TEX2)
-	protex -fS $(SRC2) > $(TEX2)
+	./protex -fS $(SRC2) > $(TEX2)
 	latex $(TEX2)
 	latex $(TEX2)
 	latex $(TEX2)
@@ -180,7 +180,7 @@ PS3  = GeosFpDriver_Perl.ps
 
 perldoc:
 	rm -f $(TEX3)
-	protex -sfS $(SRC3) > $(TEX3)
+	./protex -sfS $(SRC3) > $(TEX3)
 	latex $(TEX3)
 	latex $(TEX3)
 	latex $(TEX3)
@@ -216,7 +216,7 @@ PS4  = AdjustForCoards.ps
 
 adjdoc:
 	rm -f $(TEX4)
-	protex -sfN $(SRC4) > $(TEX4)
+	./protex -sfN $(SRC4) > $(TEX4)
 	latex $(TEX4)
 	latex $(TEX4)
 	latex $(TEX4)
