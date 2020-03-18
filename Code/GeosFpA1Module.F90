@@ -963,6 +963,118 @@ MODULE GeosFpA1Module
        CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
     ENDIF
 
+!     TSOIL1
+    IF ( StrPos( 'TSOIL1', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'soil_temperatures_layer_1'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSOIL1', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+
+!     TSOIL2
+    IF ( StrPos( 'TSOIL2', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'soil_temperatures_layer_2'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSOIL2', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+
+!     TSOIL3
+    IF ( StrPos( 'TSOIL3', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'soil_temperatures_layer_3'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSOIL3', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+
+!     TSOIL4
+    IF ( StrPos( 'TSOIL4', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'soil_temperatures_layer_4'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSOIL4', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+
+!     TSOIL5
+    IF ( StrPos( 'TSOIL5', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'soil_temperatures_layer_5'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSOIL5', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+
+!     TSOIL6
+    IF ( StrPos( 'TSOIL6', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'soil_temperatures_layer_6'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSOIL6', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+    
+!     TSURF
+    IF ( StrPos( 'TSURF', tavg1_2d_lnd_Nx_Data ) >= 0 ) THEN
+       var3  = (/ idLon, idLat, idTime /)
+       lName = 'surface_temperature_of_land_incl_snow'
+       units = 'K'
+       gamap = 'GMAO-2D'
+       CALL NcDef_Variable      ( fOut, 'TSURF', NF_FLOAT, 3, var3, vId      )
+       CALL NcDef_Var_Attributes( fOut, vId, 'long_name',      TRIM( lName ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'units',          TRIM( units ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'gamap_category', TRIM( gamap ) )
+       CALL NcDef_Var_Attributes( fOut, vId, 'missing_value',  FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, '_FillValue',     FILL_VALUE    )
+       CALL NcDef_Var_Attributes( fOut, vId, 'scale_factor',   1e0           )
+       CALL NcDef_Var_Attributes( fOut, vId, 'add_offset',     0e0           )
+    ENDIF
+
 !     TS
     IF ( StrPos( 'TS', tavg1_2d_slv_Nx_Data ) >= 0 ) THEN
        var3  = (/ idLon, idLat, idTime /)
@@ -2528,8 +2640,10 @@ MODULE GeosFpA1Module
           ! Post-regrid handling
           !-----------------------------------------------------------------
           SELECT CASE( name )
-             CASE( 'FRSNO', 'GRN',   'GWETROOT', 'GWETTOP', 'LAI',  &
-                   'PARDF', 'PARDR', 'SNODP',    'SNOMAS'          )
+             CASE( 'FRSNO',  'GRN',    'GWETROOT', 'GWETTOP', 'LAI',    &
+                   'PARDF',  'PARDR',  'SNODP',    'SNOMAS',  'TSOIL1', &      
+                   'TSOIL2', 'TSOIL3', 'TSOIL4',   'TSOIL5',  'TSOIL6', &
+                   'TSURF' )
                 ! These fields are always positive-definite
                 IF ( do2x25 ) WHERE( Q2x25 < 0e0 ) Q2x25 = 0e0
                 IF ( do4x5  ) WHERE( Q4x5  < 0e0 ) Q4x5  = 0e0

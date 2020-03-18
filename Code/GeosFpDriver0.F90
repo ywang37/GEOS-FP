@@ -46,8 +46,8 @@ PROGRAM GeosFpDriver0
   ! Create the 1-hour average data file
   CALL GeosFpMakeA1
 
-  ! Create the 3-hour instantaneous files
-  CALL GeosFpMakeI3
+!  ! Create the 3-hour instantaneous files
+!  CALL GeosFpMakeI3
 
   ! Cleanup and quit 
   CALL GeosFpCleanup

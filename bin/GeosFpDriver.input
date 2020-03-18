@@ -57,7 +57,7 @@ EFLUX,EVAP,FRSEAICE,HFLUX,PBLH,PRECANV,PRECCON,PRECLSC,PRECSNO,PRECTOT,USTAR,Z0M
 
 ==> tavg1_2d_lnd_Nx
 GEOS.fp.asm.tavg1_2d_lnd_Nx.YYYYMMDD_hhmm.V01.nc4
-FRSNO,GRN,GWETROOT,GWETTOP,LAI,PARDF,PARDR,SNODP,SNOMAS
+FRSNO,GRN,GWETROOT,GWETTOP,LAI,PARDF,PARDR,SNODP,SNOMAS,TSOIL1,TSOIL2,TSOIL3,TSOIL4,TSOIL5,TSOIL6,TSURF
 
 ==> tavg1_2d_rad_Nx
 GEOS.fp.asm.tavg1_2d_rad_Nx.YYYYMMDD_hhmm.V01.nc4
@@ -93,59 +93,59 @@ GEOS.fp.asm.inst3_3d_asm_Nv.YYYYMMDD_hhmm.V01.nc4
 PS,PV,QV,T
 
 ==> Local Raw Data Path
-/data3/jxu/GCsupport/GEOS-FP_raw/201407/
+/Dedicated/jwang-data/shared_satData/GEOS_FP/ori/
 
 ==> Nested CH output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.025x03125.CH.nc
 /acenet/shared/ctm/GEOS_0.25x0.3125_CH.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.25x0.3125_CH.d/GEOS_FP/YYYY/MM/
   801  421  1025 581   # China grid
 
 ==> Nested EU output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.025x03125.EU.nc
 /acenet/shared/ctm/GEOS_0.25x0.3125_EU.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.25x0.3125_EU.d/GEOS_FP/YYYY/MM/
   529 492 705 606      # NOTE: Need correct indices
 
 ==> Nested NA output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.025x03125.NA.nc
 /acenet/shared/ctm/GEOS_0.25x0.3125_NA.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.25x0.3125_NA.d/GEOS_FP/YYYY/MM/
   161 400 385 601
 
 ==> Nested SE output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.025x03125.SE.nc
 /acenet/shared/ctm/GEOS_0.25x0.3125_SE.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.25x0.3125_SE.d/GEOS_FP/YYYY/MM/
   817 321 993 481
   
 ==> Nested 0625 CH output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.05x0625.CH.nc
 /acenet/shared/ctm/GEOS_0.5x0.625_CH.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.5x0.625_CH.d/GEOS_FP/YYYY/MM/
   401  211  513 291   # China grid
 
 ==> Nested 0625 EU output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.05x0625.EU.nc
 /acenet/shared/ctm/GEOS_0.5x0.625_EU.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.5x0.625_EU.d/GEOS_FP/YYYY/MM/
   265 246 353 303     
 
 ==> Nested 0625 NA output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.05x0625.NA.nc
 /acenet/shared/ctm/GEOS_0.5x0.625_NA.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.5x0.625_NA.d/GEOS_FP/YYYY/MM/
   81 201 193 301
 
 ==> Nested 0625 SE output
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.05x0625.SE.nc
 /acenet/shared/ctm/GEOS_0.5x0.625_SE.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.5x0.625_SE.d/GEOS_FP/YYYY/MM/
@@ -154,17 +154,17 @@ GEOSFP.YYYYMMDD.%%%%%%.05x0625.SE.nc
 ==> 2 x 2.5 output
 T
 GEOSFP.YYYYMMDD.%%%%%%.2x25.nc
-/acenet/shared/ctm/GEOS_2x2.5.d/GEOS_FP/YYYY/MM/
-/acenet/shared/ctm/GEOS_2x2.5.d/GEOS_FP/YYYY/MM/
+/Dedicated/jwang-data/GCDATA/GEOS_2x2.5/GEOS_FP_soil_T/YYYY/MM/
+/Dedicated/jwang-data/GCDATA/GEOS_2x2.5/GEOS_FP_soil_T/YYYY/MM/
 
 ==> 4 x 5 output 
-T
+F
 GEOSFP.YYYYMMDD.%%%%%%.4x5.nc
 /acenet/shared/ctm/GEOS_4x5.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_4x5.d/GEOS_FP/YYYY/MM/
 
 ==> Native-resolution wind speed output
-T
+F
 GEOSFP.YYYYMMDD.SPEED.025x03125.nc
 /acenet/shared/ctm/GEOS_0.25x0.3125.d/GEOS_FP/YYYY/MM/
 /acenet/shared/ctm/GEOS_0.25x0.3125.d/GEOS_FP/YYYY/MM/

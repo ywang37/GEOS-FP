@@ -36,7 +36,7 @@
 #
 
 ==> Raw Met Data Directory
-/as/scratch/bmy/GEOS_FP
+/Dedicated/jwang-data/shared_satData/GEOS_FP/ori
 
 ==> Code Directory
 ../bin
@@ -63,7 +63,7 @@ GeosFpDriver{THREAD}.x
 300
 
 ==> Emails for Notification
-your\@email.address
+yi.wang373\@gmail.com
 
 #-----------------------------------------------------
 # File sizes for processed GEOS-FP met data:

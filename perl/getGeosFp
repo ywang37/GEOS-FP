@@ -187,12 +187,19 @@ sub getFileList() {
   # Get a listing of files on the GMAO FTP server via wget
   # This will be saved to the .listing file in the $MET_DIR
   #--------------------------------------------------------------------------
+  print "ywang\n";
+  print "$MET_DIR\n";
 
   # Wget command
-  $listCmd = "cd $MET_DIR; wget --quiet --no-remove-listing --user=gmao_ops --password= --cut-dirs=5 --retr-symlinks ftp://ftp.nccs.nasa.gov/fp/das/Y$YEAR/M$MONTH/D$DAY/; mv .listing listing; rm index.html*";
+  #$listCmd = "cd $MET_DIR; wget --quiet --no-remove-listing --user=gmao_ops --password= --cut-dirs=5 --retr-symlinks ftp://ftp.nccs.nasa.gov/fp/das/Y$YEAR/M$MONTH/D$DAY/; mv .listing listing; rm index.html*";
+  $listCmd = "cd $MET_DIR; wget --quiet --no-remove-listing --user=gmao_ops --password= --cut-dirs=5 --retr-symlinks https://portal.nccs.nasa.gov/datashare/gmao/geos-fp/das/Y$YEAR/M$MONTH/D$DAY/; mv .listing listing; rm index.html*";
+  print "ywang1\n";
+  print $listCmd;
+  print "\n";
 
   # Download a fresh copy of the file listing
   $listOut = qx( $listCmd );
+  print $listOut;
 
   # Make sure we can find the file list from the GMAO FTP site
   while ( !( -f $LISTING ) ) { $listOut = qx( $listCmd ); }
@@ -217,6 +224,7 @@ sub getFileList() {
       @fileList = ( @fileList, $substr[8] );
     }
   }
+  print "ywang2\n";
 
   # Return list of files
   return( @fileList );
@@ -441,10 +449,16 @@ sub main() {
   # Get info from the defautls file, also set default date
   &getDefaults( "doGeosFp.input" );
 
+  print "aaa\n";
+  print $N_FILES;
   # We expect $N_FILES files for a normal day's worth of GEOS-FP met data
   while ( scalar( @fileList = &getFileList() ) != $N_FILES ) { 
+    print "bbb\n";
+    print $N_FILES;
     sleep( $SLEEP_SEC );
   }
+
+  print "ccc\n";
 
   # Download data files
   $status = &getData( @fileList ); 
