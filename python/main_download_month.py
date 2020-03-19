@@ -10,7 +10,7 @@ from mylib.geosfp.download import get_tavg1_month
 # Start user parameters
 #
 
-month_list = ['201807']
+month_list = ['201808']
 
 root_data_dir = '/Dedicated/jwang-data/shared_satData/GEOS_FP/ori'
 
