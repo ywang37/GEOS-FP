@@ -10,7 +10,9 @@ from mylib.geosfp.gc_process import process_geosfp_month
 # Start user parameters
 #
 
-month_list = ['201805', '201806', '201807']
+month_list = ['201405', '201406', '201407', '201408', '201409']
+#month_list = ['201805', '201806', '201807']
+#month_list = ['201809']
 
 root_run_dir = '/Dedicated/jwang-data/ywang/soil_NOx/GEOS-FP_process\
 /GEOS_FP/python/runs'
